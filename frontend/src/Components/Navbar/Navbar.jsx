@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-import logo from '../Assets/logo.png'
+import logo from '../Assets/logo.jpg'
 import cart_icon from '../Assets/cart_icon.png'
 import { ShopContext } from '../../Context/ShopContext'
 import nav_dropdown from '../Assets/nav_dropdown.png'
@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className='nav'>
       <Link to='/' onClick={() => { setMenu("shop") }} style={{ textDecoration: 'none' }} className="nav-logo">
         <img src={logo} alt="logo" />
-        <p>Fashion Club</p>
+        <p>The Outfit Hub</p>
       </Link>
       <img onClick={dropdown_toggle} className='nav-dropdown' src={nav_dropdown} alt="" />
       <ul ref={menuRef} className="nav-menu">

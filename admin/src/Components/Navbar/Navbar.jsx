@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
  
-      <div>Fashion Club Admin/Seller Panel</div>
+      <div>The Outfit Hub Admin/Seller Panel</div>
     </div>
   )
 }
