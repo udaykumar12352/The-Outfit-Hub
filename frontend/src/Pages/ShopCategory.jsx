@@ -13,7 +13,7 @@ const ShopCategory = (props) => {
 
   // Fetch products from the server
   const fetchInfo = () => { 
-    fetch('http://localhost:4000/allproducts') 
+    fetch('https://the-outfit-hub.onrender.com/allproducts') 
       .then((res) => res.json()) 
       .then((data) => {
         setAllProducts(data);
