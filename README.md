@@ -1,4 +1,4 @@
-# The-Outfit-Hub - Fashion E-commerce Website
+# The-Outfit-Hub(E-commerce Website)
 
 Welcome to **The-Outfit-Hub**, a modern and stylish fashion e-commerce platform designed to elevate your online shopping experience. From trendy apparel to timeless classics, The-Outfit-Hub brings fashion to your fingertips with a sleek interface and seamless functionality.
 
