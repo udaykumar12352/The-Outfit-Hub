@@ -1,0 +1,113 @@
+Documentation for App.js
+
+Overview
+
+The App.js file serves as the main entry point for the frontend application. It sets up the routing structure and organizes how users navigate between different pages of the website. Using React Router and various imported components, this file ensures users can explore pages such as the shop, product details, cart, login, and informational sections like About and Contact. This file creates a seamless shopping experience by rendering appropriate components based on the URL path.
+
+Imports
+
+The file imports several components and assets needed to build the app’s user interface and routing:
+
+
+
+
+
+Navbar: The top navigation bar component.
+
+
+
+Router, Routes, Route (from react-router-dom): Core routing utilities to manage page navigation.
+
+
+
+Pages: Shop, Cart, Product, ShopCategory, LoginSignup, About, and Contact. These are various screens users visit.
+
+
+
+Footer component to appear at the bottom of every page.
+
+
+
+Image assets: banners for women, men, and kids categories to visually enhance category pages.
+
+Constants
+
+Two global constants are declared and exported:
+
+
+
+
+
+backend_url: Stores the URL for the backend API, set to http://localhost:4000. This is crucial for any data fetching or server interaction.
+
+
+
+currency: Holds the string representing the Indian Rupee symbol (₹), which will likely be used across the UI to display prices consistently.
+
+The App Component
+
+This is a functional React component that structures the entire application page layout and routing logic.
+
+Functionality
+
+It wraps the application inside a Router to enable client-side routing. It renders:
+
+
+
+
+
+Navbar component — visible on every page to provide navigation links.
+
+
+
+A Routes block that defines several Route elements. Each route specifies a URL path and the component to render for that path:
+
+
+
+
+
+/: The homepage showing the full shop with the Shop component, filtered with gender="all" to show all products.
+
+
+
+/mens: Displays a men’s category shop page using the ShopCategory component and the men’s banner image.
+
+
+
+/womens: Similar to men’s, but for women’s category with the corresponding banner.
+
+
+
+/kids: Displays kid’s category products with the kids banner.
+
+
+
+/about: Loads the About page — presumably company or app info.
+
+
+
+/contact: Loads the Contact page for user inquiries or support.
+
+
+
+/product and nested dynamic route /:productId: Display detailed product information. The nested route suggests the component dynamically fetches and shows details based on the product ID parameter in the URL.
+
+
+
+/cart: Displays the user's shopping cart contents.
+
+
+
+/login: Renders the login/signup page for user authentication.
+
+
+
+Footer component — appears at the bottom of every page.
+
+Example to illustrate routing concept
+
+If a user visits “/mens” in the browser, the app will display the ShopCategory page for men, showing the men’s banner and the relevant products. Similarly, navigating to “/product/123” will show details for the product with ID 123.
+
+Summary
+
+The App.js file is the backbone of the frontend application’s navigation and overall page structure. It elegantly ties together header navigation, dynamic page rendering based on URL paths, and footer display, ensuring users have a consistent and smooth experience while exploring the online store.
