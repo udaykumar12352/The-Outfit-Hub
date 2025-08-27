@@ -1,3 +1,5 @@
+This is Outfit Hub admin panel where admin can login into the page and can add a product with auto increment id and can also delete a product with the specific id of the product.The changes that aremade to the product lists will be reflected directly into the main shopping page
+
 ## Available Scripts
 
 In the project directory, you can run:
